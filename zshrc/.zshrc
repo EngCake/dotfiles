@@ -1,7 +1,7 @@
 # Oh My ZSH Config
 #
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="fino"
+ZSH_THEME="refined"
 zstyle ':omz:update' mode reminder
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
@@ -17,6 +17,3 @@ alias lg="lazygit"
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source <(gh completion -s zsh)
-
-# Attach to tmux
-tmux attach

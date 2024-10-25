@@ -8,7 +8,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 #
-alias v=nvim
+alias vi=nvim
 alias ls="eza -1 --tree --level 2 --icons --git-ignore"
 alias lg="lazygit"
 

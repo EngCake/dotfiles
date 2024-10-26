@@ -17,3 +17,6 @@ alias lg="lazygit"
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source <(gh completion -s zsh)
+
+# zoxide
+eval "$(zoxide init zsh)"

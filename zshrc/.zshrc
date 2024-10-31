@@ -1,15 +1,22 @@
 # Oh My ZSH Config
 #
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="refined"
 zstyle ':omz:update' mode reminder
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
+# Source other files
+#
+source .linux.zshrc
+
+# Config Oh My POSH
+#
+eval "$(oh-my-posh init zsh --config ~/themes/robbyrussell.omp.json)"
+
 # Aliases
 #
 alias vi=nvim
-alias ls="eza -1 --tree --level 2 --icons --git-ignore"
+alias ls="eza -1 --tree --level 2 --git-ignore"
 alias lg="lazygit"
 
 # Integrations

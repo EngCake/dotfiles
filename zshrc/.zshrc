@@ -2,16 +2,16 @@
 #
 export ZSH="$HOME/.oh-my-zsh"
 zstyle ':omz:update' mode reminder
-plugins=(git)
+plugins=(git zsh-vi-mode)
 source $ZSH/oh-my-zsh.sh
 
 # Source other files
 #
-source .linux.zshrc
+source ~/.linux.zshrc
 
 # Config Oh My POSH
 #
-eval "$(oh-my-posh init zsh --config ~/themes/robbyrussell.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.omp-themes/robbyrussell.omp.json)"
 
 # Aliases
 #

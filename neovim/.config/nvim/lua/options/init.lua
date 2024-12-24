@@ -2,7 +2,7 @@
 vim.opt.number = true
 vim.opt.numberwidth = 4
 vim.opt.cursorline = true
-vim.opt.signcolumn = "number"
+vim.opt.signcolumn = "yes"
 
 -- Mouse and mode settings
 vim.opt.mouse = "a"
@@ -37,7 +37,3 @@ vim.o.foldcolumn = "0"
 vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
 vim.o.foldenable = true
-
--- Transparent numbers column
-vim.api.nvim_set_hl(0, "LineNr", { bg = "NONE", fg = "#5c6370" }) -- Line number color
-vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "NONE", fg = "#c678dd" }) -- Highlighted line number
